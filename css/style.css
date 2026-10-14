@@ -1,0 +1,103 @@
+/* =========================================
+   Estilos Generales
+   ========================================= */
+body
+{
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3
+{
+    color: #2c3e50;
+}
+
+/* =========================================
+   Navegación Principal
+   ========================================= */
+nav
+{
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+nav a:hover
+{
+    color: #3498db;
+}
+
+/* =========================================
+   Módulo I: Portal Educativo (index.php)
+   ========================================= */
+section
+{
+    background-color: #ffffff;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+section p strong
+{
+    color: #2980b9;
+}
+
+/* =========================================
+   Módulo II: Dashboard (dashboard.php)
+   ========================================= */
+.metric-card
+{
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.metric-card h3
+{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #e74c3c;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Formato tipo consola para las métricas del sistema */
+pre
+{
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1px solid #000;
+}
