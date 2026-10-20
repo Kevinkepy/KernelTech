@@ -1,9 +1,12 @@
 <?php
-// Ejecución de comandos del sistema requeridos
-$uptime = shell_exec('uptime');
-$memoria = shell_exec('free -h');
-$disco = shell_exec('df -h /');
-$procesos = shell_exec('ps aux --sort=-%cpu | head -n 11');
+// Solución 1: Establecer las rutas del sistema para que www-data encuentre los comandos
+putenv('PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin');
+
+// Solución 2: Usar 'auxww' (wide) para evitar que la lista de procesos se recorte
+$uptime = shell_exec('uptime 2>&1');
+$memoria = shell_exec('free -h 2>&1');
+$disco = shell_exec('df -h / 2>&1');
+$procesos = shell_exec('ps auxww --sort=-%cpu | head -n 11 2>&1');
 ?>
 <!DOCTYPE html>
 <html lang="es">
